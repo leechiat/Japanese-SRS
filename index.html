@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="min-h-screen overflow-y-auto">
 <head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KotobaSRS — JLPT N5–N1 Spaced Repetition Vocabulary Trainer</title>
@@ -30,6 +32,11 @@
         }
       }
     };
+  </script>
+  <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
   </script>
   <style>
     body {

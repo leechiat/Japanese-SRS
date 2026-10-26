@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+<link rel="apple-touch-icon" href="icon-192.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KotobaSRS — JLPT N5–N1 Spaced Repetition Vocabulary & Grammar Trainer</title>
@@ -2524,6 +2527,11 @@
 
             applyGlobalFilters();
         });
+    </script>
+    <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
     </script>
 </body>
 </html>
